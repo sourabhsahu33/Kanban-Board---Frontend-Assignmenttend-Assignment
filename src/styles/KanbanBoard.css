@@ -1,0 +1,76 @@
+.kanban-board {
+    display: flex;
+    justify-content: space-around; /* Keep the existing justification */
+    padding: 20px;
+    background-color: #f7f7f7; /* Updated background to maintain consistency */
+  }
+  
+  .kanban-column {
+    display: flex; /* Flex layout for children alignment */
+    flex-direction: column; /* Stack children vertically */
+    flex: 1; /* Allow columns to grow evenly */
+    margin: 0 10px; /* Maintain spacing between columns */
+    background-color: #fff; /* Background color for columns */
+    padding: 15px; /* Padding inside columns */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for elevation effect */
+  }
+  
+  .kanban-header {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between title and icons */
+    margin-bottom: 15px; /* Space below the header */
+  }
+  
+  .group-icon {
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+    margin-right: 10px; /* Space between icon and title */
+  }
+  
+  .kanban-header h2 {
+    font-size: 18px; /* Adjust title size */
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center title within the header */
+  }
+  
+  .ticket-count {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-left: 5px; /* Space between title and count */
+  }
+  
+  .kanban-actions {
+    display: flex;
+    gap: 10px; /* Space between action icons */
+  }
+  
+  .action-icon {
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    cursor: pointer; /* Makes the icons look clickable */
+  }
+  
+  .ticket-card {
+    background-color: white;
+    margin: 10px 0; /* Space between ticket cards */
+    padding: 15px; /* Padding inside ticket cards */
+    border-radius: 6px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for elevation effect */
+  }
+  
+  /* Optional: Adjustments for small screens */
+  @media (max-width: 600px) {
+    .kanban-board {
+      flex-direction: column; /* Stack columns vertically */
+      gap: 10px;
+    }
+  
+    .kanban-column {
+      width: auto; /* Allow width to adjust */
+    }
+  }
+  
