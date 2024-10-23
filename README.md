@@ -43,7 +43,7 @@ KANBAN-BOARD
 ### 📦 API Integration
 The application fetches ticket data from the following API:
 
-API URL: https://api.quicksell.co/v1/internal/frontend-assignment
+API URL: --------
 
 Data includes ticket title, priority, status, tags, and assigned users.
 
