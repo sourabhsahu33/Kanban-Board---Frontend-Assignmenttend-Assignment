@@ -41,27 +41,27 @@ KANBAN-BOARD
 ```
 
 ### 📦 API Integration
-The application fetches ticket data from the following API:
+- The application fetches ticket data from the following API:
 
-API URL: --------
+- API URL: --------
 
-Data includes ticket title, priority, status, tags, and assigned users.
+- Data includes ticket title, priority, status, tags, and assigned users.
 
 ### 🛠️ How to Run the Project
 
-# 1. Clone the repository:
+### 1. Clone the repository:
 ```
 git clone https://github.com/your-repo/kanban-board.git
 ```
-# 2. Navigate into the project folder
+### 2. Navigate into the project folder
 ```
 cd kanban-board
 ```
-# 3. Install dependencies:
+### 3. Install dependencies:
 ```
 npm install
 ```
-# 4. Run the app:
+### 4. Run the app:
 ```
 npm start
 ```
