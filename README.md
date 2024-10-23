@@ -1,69 +1,72 @@
-# Getting Started with Create React App
+# Kanban Board - Frontend Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a Kanban board application built with React JS that allows users to dynamically group and sort tickets based on status, user, or priority. The application interacts with an external API to fetch ticket data and provides users with a clean and responsive interface to manage tasks.
 
-## Available Scripts
+## 📑 Features
 
-In the project directory, you can run:
+- Dynamic Grouping: Group tickets by status, user, or priority.
+- Sorting Options: Sort tickets by priority (descending) or title (ascending).
+- Responsive Design: Works across all devices with a visually appealing layout.
+- API Integration: Fetches and displays real-time ticket data from the provided API.
 
-### `npm start`
+### 📂 Project Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+KANBAN-BOARD
+├── node_modules        # Project dependencies
+├── public              # Public assets like index.html
+├── src
+│   ├── components      # React components used across the app
+│   │   ├── GroupingDropdown.js  # Dropdown for group options
+│   │   ├── Header.js            # App header
+│   │   ├── KanbanBoard.js       # Main Kanban board component
+│   │   ├── SortingDropdown.js   # Dropdown for sort options
+│   │   ├── TicketCard.js        # Component for each ticket card
+│   │   ├── UsersList.js         # List of users in the sidebar
+│   ├── icons            # Folder for all icons used in the app
+│   ├── pages            # App pages
+│   │   └── HomePage.js  # Main home page of the Kanban board
+│   ├── services         # API service files
+│   │   └── api.js       # Fetch data from the external API
+│   ├── styles           # CSS stylesheets for components
+│   │   ├── Header.css
+│   │   ├── KanbanBoard.css
+│   │   ├── TicketCard.css
+│   │   ├── UsersList.css
+│   ├── App.js           # Main app entry point
+│   ├── App.css          # Global styles
+│   └── index.js         # Entry point for React DOM rendering
+├── .gitignore           # Files to ignore in Git
+└── package.json         # Project dependencies and scripts
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 📦 API Integration
+The application fetches ticket data from the following API:
 
-### `npm test`
+API URL: https://api.quicksell.co/v1/internal/frontend-assignment
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Data includes ticket title, priority, status, tags, and assigned users.
 
-### `npm run build`
+### 🛠️ How to Run the Project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# 1. Clone the repository:
+```
+git clone https://github.com/your-repo/kanban-board.git
+```
+# 2. Navigate into the project folder
+```
+cd kanban-board
+```
+# 3. Install dependencies:
+```
+npm install
+```
+# 4. Run the app:
+```
+npm start
+```
+![Screenshot 2024-10-23 122905](https://github.com/user-attachments/assets/5b66e1e6-ece8-4d5d-b8a4-fb3db1fbc964)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
 ### `npm run build` fails to minify
 
